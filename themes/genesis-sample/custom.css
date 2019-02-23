@@ -1,0 +1,115 @@
+/**
+    Global Classes
+**/
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+[data-animate]{
+    opacity: 0;
+}
+@media screen and (min-width: 1000px){
+    .flex-row{
+        display: flex;
+    }
+    .col-6.cell{
+        width: 50%;
+    }
+    .col-4.cell{
+        width: 33.333%;
+    }
+    .flex-row.middle{
+        justify-content: center;
+        align-items: center;
+    }
+}
+/**
+    Custom Home Page CSS
+**/
+.hero{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+.hero-right,
+.hero-left{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.hero-left{
+    background-color: #ec155b;
+    background-image: -webkit-gradient(linear, left top, right top, from(#ec155b), to(#cb1176));
+    background-image: -webkit-linear-gradient(left, #ec155b, #cb1176);
+    background-image: -moz-linear-gradient(left, #ec155b, #cb1176);
+    background-image: -ms-linear-gradient(left, #ec155b, #cb1176);
+    background-image: -o-linear-gradient(left, #ec155b, #cb1176);
+    background-image: linear-gradient(left, #ec155b, #cb1176);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ec155b', endColorStr='#cb1176', gradientType='1');    padding: 4em;
+    width: 60%;
+}
+.hero-left a.button{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: none;
+    border: 2px solid #fff;
+}
+.hero-left a.button:hover{
+    border: 2px solid #120133;
+    color: #120133;
+}
+.hero-left h2{
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+    font-weight: 900;
+}
+.hero-left h3{
+    font-size: 4.5rem;
+    color: #fff;
+    line-height: .75;
+    font-family: 'Great Vibes', cursive;
+    text-shadow: 3px 3px 0px rgba(0,0,0,.35);
+}
+.hero-right{
+    background: url('/wp-content/files/jenn-image.jpg') no-repeat top center / cover;
+    width: 40%;
+}
+.tier-1{
+    padding: 6em 1em;
+}
+.tier-2{
+    position: relative;
+    padding: 200px 1em;
+    background: #120133;
+    color: #fff;
+    
+}
+.tier-2 .wrap{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+
+
+}
+.tier-2 h2{
+    font-family: 'Great Vibes', cursive;
+    font-size: 3.5rem;
+}
+.tier-2 #Layer_1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.tier-2 #Layer_2{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transform: rotate(180deg);
+}
