@@ -14,11 +14,33 @@
     .flex-row{
         display: flex;
     }
-    .col-6.cell{
-        width: 50%;
+    .cell.offset-left-2{
+        margin-left: -16.667%;
+        position: relative;
+    }
+    .cell.padding-x{
+        padding: 0 1em;
+    }
+    .col-2.cell{
+        width: 16.667%;
+    }
+    .col-3.cell{
+        width: 25%;
     }
     .col-4.cell{
         width: 33.333%;
+    }
+    .col-6.cell{
+        width: 50%;
+    }
+    .col-8.cell{
+        width: 66.666%;
+    }
+    .col-10.cell{
+        width: 80%;
+    }
+    .col-9.cell{
+        width: 75%;
     }
     .flex-row.middle{
         justify-content: center;
@@ -112,4 +134,42 @@
     left: 0;
     width: 100%;
     transform: rotate(180deg);
+}
+.tier-3{
+    padding: 6em 1em;
+}
+.tier-3 .wrap{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.tier-3 .inner-container > .cell:first-child{
+    background: #120133;
+    min-height: 600px;
+    position: relative;
+}
+.tier-3 .inner-container > .cell:first-child::before{
+    content: "";
+    display: block;
+    width: 200%;
+    height: 100px;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-5deg);
+}
+.tier-3 .inner-container > .cell:first-child::after{
+    content: "";
+    display: block;
+    width: 200%;
+    height: 100px;
+    background: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%) rotate(5deg);
+}
+.tier-3 .inner-container > .cell:nth-child(2){
+    padding: 4em;
 }

@@ -1,13 +1,13 @@
 <?php
 /**
- * Genesis Sample.
+ * Younique Theme.
  *
- * This file adds functions to the Genesis Sample Theme.
+ * This file adds functions to the Younique Theme.
  *
- * @package Genesis Sample
- * @author  StudioPress
+ * @package Younique Theme
+ * @author  Eric Isaksen
  * @license GPL-2.0-or-later
- * @link    https://www.studiopress.com/
+ * @link    https://hellacool.me/
  */
 
 // Starts the engine.
@@ -304,4 +304,9 @@ genesis_register_sidebar( array(
 	'id'		=> 'tier-2',
 	'name'		=> __( 'Tier 2', 'nabm' ),
 	'description'	=> __( 'This is the second tier widget area for the home page.', 'nabm' ),
+) );
+genesis_register_sidebar( array(
+	'id'		=> 'tier-3',
+	'name'		=> __( 'Tier 3', 'nabm' ),
+	'description'	=> __( 'This is the third tier widget area for the home page.', 'nabm' ),
 ) );
